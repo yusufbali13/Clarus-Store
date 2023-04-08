@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import SearchComp from "../components/SearchComp";
 import axios from "axios";
+import { useAppDispatch } from "../app/hooks";
 import {
   fetchFail,
   fetchStart,
   getSuccessProduct,
 } from "../features/productsSlice";
-import { useAppDispatch } from "../app/hooks";
 
 export interface Products {
   products: Product[];
@@ -35,13 +35,15 @@ const Home = () => {
     getData();
   }, [search]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSearch(e.target.value);
+  // };
+  const handleChange: EventFunc = () => {
     setSearch(e.target.value);
   };
-
   return (
     <div>
-      <SearchComp />
+      <SearchComp handleChange={handleChange} />
     </div>
   );
 };
