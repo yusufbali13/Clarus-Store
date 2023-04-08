@@ -8,6 +8,7 @@ import {
   getSuccessProduct,
 } from "../features/productsSlice";
 import { EventFunc, Products } from "../models/models";
+import Card from "../components/Card";
 
 const Home = () => {
   const [search, setSearch] = useState<string>("");
@@ -55,9 +56,9 @@ const Home = () => {
           </div>
         )
       ) : (
-        <div>
+        <div className="flex justify-center items-center flex-wrap gap-5 p-5">
           {productsList.map((item) => (
-            <p>{item.title}</p>
+            <Card key={item.id} />
           ))}
         </div>
       )}
