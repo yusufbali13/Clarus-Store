@@ -1,6 +1,10 @@
 import React from "react";
 
-const SearchComp = () => {
+interface ISearchComp {
+  handleChange: (e) => void;
+}
+
+const SearchComp: React.FC<ISearchComp> = ({}) => {
   return (
     <div className="mt-5">
       <div className="relative w-6/12 mx-auto">
