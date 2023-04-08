@@ -42,6 +42,10 @@ const Home = () => {
     setSearch(e.target.value);
   };
 
+  const handleAdd = {product}=> {
+    if(favorites filter(item=> item.id === productsReducer.id).length))
+  }
+
   return (
     <div>
       <SearchComp handleChange={handleChange} />
@@ -58,7 +62,7 @@ const Home = () => {
       ) : (
         <div className="flex justify-center items-center flex-wrap gap-5 p-5">
           {productsList.map((item) => (
-            <Card key={item.id} />
+            {productsList.map((item)=> <Card key={}>)}<Card key={item.id} />
           ))}
         </div>
       )}
