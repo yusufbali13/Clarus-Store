@@ -1,6 +1,7 @@
 import React from "react";
 import { EventFunc } from "../models/models";
 
+//! componentin alacağı propsları tanımladık.böylelikle belirlediklerimiz dışında props gönderemeyecez. Unuttuğumuz bir props olursa da bizi uyaracak.
 // interface ISearchComp {
 //     handleChange : (e:React.ChangeEvent<HTMLInputElement>) => void;
 // }

@@ -16,6 +16,7 @@ export const toastWarnNotify: msgFunc = (msg) => {
     theme: "colored",
   });
 };
+
 export const toastSuccessNotify: msgFunc = (msg) => {
   toast.success(msg, {
     icon: "🚀",
