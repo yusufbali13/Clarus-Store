@@ -8,7 +8,7 @@ import {
   fetchStart,
   getSuccessProduct,
 } from "../features/productsSlice";
-import { VoidFunc } from "../models/models";
+// import { VoidFunc } from "../models/models";
 import { EventFunc, Product, Products } from "../models/models";
 import Card from "../components/Card";
 import { toastSuccessNotify, toastWarnNotify } from "../helper/ToastNotify";

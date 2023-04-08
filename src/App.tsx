@@ -5,7 +5,7 @@ import FavoritesPage from "./pages/FavoritesPage";
 import NavBar from "./components/NavBar";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
-import { Flip, ToastContainer, Zoom } from "react-toastify";
+import { Flip, ToastContainer } from "react-toastify";
 
 function App() {
   return (
